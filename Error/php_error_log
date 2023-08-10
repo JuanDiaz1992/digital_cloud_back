@@ -1,0 +1,90 @@
+[09-Aug-2023 08:17:36 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function PostController::fncResponse(), 1 passed in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 51 and exactly 2 expected in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php:57
+Stack trace:
+#0 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php(51): PostController->fncResponse(409)
+#1 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\views\post.php(42): PostController::createMenuTemp(Array)
+#2 C:\xampp\htdocs\gestion_restaurante\Routes\services\post.php(38): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gestion_restaurante\Routes\routes.php(26): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\gestion_restaurante\gestionRestauranteSettings\routes_controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\gestion_restaurante\index.php(14): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 57
+[09-Aug-2023 08:17:37 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function PostController::fncResponse(), 1 passed in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 51 and exactly 2 expected in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php:57
+Stack trace:
+#0 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php(51): PostController->fncResponse(409)
+#1 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\views\post.php(42): PostController::createMenuTemp(Array)
+#2 C:\xampp\htdocs\gestion_restaurante\Routes\services\post.php(38): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gestion_restaurante\Routes\routes.php(26): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\gestion_restaurante\gestionRestauranteSettings\routes_controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\gestion_restaurante\index.php(14): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 57
+[09-Aug-2023 08:19:10 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gestion_restaurante_php.items_menu_temp' doesn't exist in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\model\get_model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\model\get_model.php(10): PDOStatement->execute()
+#1 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php(8): GetModel::getData('items_menu_temp', '*')
+#2 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\views\get.php(25): GetController::getData('items_menu_temp', '*')
+#3 C:\xampp\htdocs\gestion_restaurante\Routes\services\get.php(39): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\gestion_restaurante\Routes\routes.php(22): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\gestion_restaurante\gestionRestauranteSettings\routes_controller.php(7): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\gestion_restaurante\index.php(14): RoutesController->index()
+#7 {main}
+  thrown in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\model\get_model.php on line 10
+[09-Aug-2023 08:19:19 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gestion_restaurante_php.items_menu_temp' doesn't exist in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\model\get_model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\model\get_model.php(10): PDOStatement->execute()
+#1 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php(8): GetModel::getData('items_menu_temp', '*')
+#2 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\views\get.php(25): GetController::getData('items_menu_temp', '*')
+#3 C:\xampp\htdocs\gestion_restaurante\Routes\services\get.php(39): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\gestion_restaurante\Routes\routes.php(22): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\gestion_restaurante\gestionRestauranteSettings\routes_controller.php(7): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\gestion_restaurante\index.php(14): RoutesController->index()
+#7 {main}
+  thrown in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\model\get_model.php on line 10
+[09-Aug-2023 08:19:25 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gestion_restaurante_php.items_menu_temp' doesn't exist in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\model\get_model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\model\get_model.php(10): PDOStatement->execute()
+#1 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php(8): GetModel::getData('items_menu_temp', '*')
+#2 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\views\get.php(25): GetController::getData('items_menu_temp', '*')
+#3 C:\xampp\htdocs\gestion_restaurante\Routes\services\get.php(39): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\gestion_restaurante\Routes\routes.php(22): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\gestion_restaurante\gestionRestauranteSettings\routes_controller.php(7): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\gestion_restaurante\index.php(14): RoutesController->index()
+#7 {main}
+  thrown in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\model\get_model.php on line 10
+[09-Aug-2023 08:22:55 Europe/Berlin] Session Destroy From Delete
+[09-Aug-2023 08:23:03 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php on line 27
+[09-Aug-2023 08:23:03 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php on line 27
+[09-Aug-2023 08:29:16 Europe/Berlin] Session Destroy From Delete
+[09-Aug-2023 08:29:20 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php on line 27
+[09-Aug-2023 08:29:20 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php on line 27
+[09-Aug-2023 08:30:00 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php on line 27
+[09-Aug-2023 08:30:04 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php on line 27
+[09-Aug-2023 08:30:40 Europe/Berlin] Session Destroy From Delete
+[09-Aug-2023 08:30:47 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php on line 27
+[09-Aug-2023 08:30:47 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php on line 27
+[09-Aug-2023 08:32:23 Europe/Berlin] Session Destroy From Delete
+[09-Aug-2023 08:32:27 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php on line 27
+[09-Aug-2023 08:32:27 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php on line 27
+[09-Aug-2023 08:32:38 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function PostController::fncResponse(), 1 passed in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 51 and exactly 2 expected in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php:57
+Stack trace:
+#0 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php(51): PostController->fncResponse(409)
+#1 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\views\post.php(42): PostController::createMenuTemp(Array)
+#2 C:\xampp\htdocs\gestion_restaurante\Routes\services\post.php(38): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gestion_restaurante\Routes\routes.php(26): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\gestion_restaurante\gestionRestauranteSettings\routes_controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\gestion_restaurante\index.php(14): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 57
+[09-Aug-2023 08:32:41 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function PostController::fncResponse(), 1 passed in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 51 and exactly 2 expected in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php:57
+Stack trace:
+#0 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php(51): PostController->fncResponse(409)
+#1 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\views\post.php(42): PostController::createMenuTemp(Array)
+#2 C:\xampp\htdocs\gestion_restaurante\Routes\services\post.php(38): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gestion_restaurante\Routes\routes.php(26): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\gestion_restaurante\gestionRestauranteSettings\routes_controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\gestion_restaurante\index.php(14): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 57
+[09-Aug-2023 08:34:18 Europe/Berlin] Session Destroy From Delete
+[09-Aug-2023 08:34:23 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php on line 27
+[09-Aug-2023 08:34:23 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\get_controler.php on line 27
