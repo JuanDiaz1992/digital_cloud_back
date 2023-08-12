@@ -23,13 +23,14 @@ class PostController{
             }else{
                 $json = array(
                     'status' => 404,
-                    'is_logged_in' => false,
                     'message' => 'Hay datos sin rellenar'
                 );
                 echo json_encode($json, http_response_code($json['status']));
                 exit;
             }
     }
+
+    //Esta parte es la encargada de gestionar el menú 
     static public function createMenuTemp($item){
         $return = new PostController();
         if (!isset($_SESSION["menu_temp"])){
@@ -48,7 +49,33 @@ class PostController{
             $response = $_SESSION["menu_temp"];
             $return -> fncResponse($response,200);
         } else {
-            $return -> fncResponse(409);
+            $response = "";
+            $return -> fncResponse($response,409);
+        }
+    }
+    static public function createItemMenu($table,$name,$description,$price,$photo,$menu_item_type,$idProfile_user){
+        if(isset($photo['name'])){ //Si el formulario incluye una imagen, la agrega, sino se pone la img por defecto
+            $carpetaDestino = __DIR__ . "../../../../files/images/MenuItems";
+            $nombreArchivo = $photo['name'];
+            $rutaArchivo = $carpetaDestino . DIRECTORY_SEPARATOR . $nombreArchivo;
+            
+            if (!is_dir($carpetaDestino)) {
+                mkdir($carpetaDestino, 0777, true);
+            }
+            
+            $rutaArchivoRelativa = 'files/images/MenuItems/' . $nombreArchivo;
+            
+            move_uploaded_file($photo['tmp_name'], $rutaArchivo);
+        }else{//Si no hay una foto, se incluye la foto por defecto
+            $rutaArchivoRelativa = "files/images/sin_imagen.webp";
+        }
+        $response = PostModel::createItemMenuModel($table,$name,$description,$price,$rutaArchivoRelativa,$menu_item_type,$idProfile_user);
+        $return = new PostController();
+        if ($response == 404){
+            $return -> fncResponse($response,404);
+
+        }elseif($response == 200){
+            $return -> fncResponse($response,200);
         }
     }
     

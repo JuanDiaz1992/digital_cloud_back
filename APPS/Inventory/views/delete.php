@@ -20,6 +20,13 @@ if(isset($data["delete_buy_inventory"])){
 }else if(isset($data["delete_bills_inventory"])){
     $table = "bills";
     firtsValidateUserAdmin($response,$token,$table,$data["idItem"]);
+
+}else if(isset($data["delete_item_data"])){
+    session_id($token);
+    session_start();
+    $response -> deleteItemTemp($data["idItemMenu"]);
+
+
 }
 
 
