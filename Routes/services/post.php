@@ -36,7 +36,10 @@ if($module == 'user'){
 
 }else if($module == 'inventory'){
     require_once "APPS/Inventory/views/post.php";
+}else if($module == 'menu_management'){
+    require_once "APPS/Menu_management/views/post.php";
 }
+
 
 
 

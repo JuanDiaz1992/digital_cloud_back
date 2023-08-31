@@ -10,23 +10,6 @@ class DeleteController{
         $return = new DeleteController();
         $return -> fncResponse($response);
     }
-    static public function deleteItemTemp($idItemMenu){
-        
-        $return = new DeleteController();
-        $tempArray = array();
-        foreach($_SESSION["menu_temp"] as  $key => $existingItem){
-            if($existingItem["id"]!=$idItemMenu){
-                array_push($tempArray, $existingItem);
-            }
-        }
-        unset($_SESSION["menu_temp"]);
-        $_SESSION["menu_temp"] = $tempArray;
-        $response = 200;
-        $return -> fncResponse($response);
-
-    }
-
-
     //Respuesta del controlador:
     public function fncResponse($response){
         if ($response === 200) {
@@ -42,8 +25,6 @@ class DeleteController{
             );
         }
         echo json_encode($json,http_response_code($json['status']));
-
-    
     }
 }
 

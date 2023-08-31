@@ -1,30 +1,5 @@
-[12-Aug-2023 05:52:48 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function PostController::fncResponse(), 1 passed in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 50 and exactly 2 expected in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php:81
-Stack trace:
-#0 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php(50): PostController->fncResponse(409)
-#1 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\views\post.php(42): PostController::createMenuTemp(Array)
-#2 C:\xampp\htdocs\gestion_restaurante\Routes\services\post.php(38): require_once('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\gestion_restaurante\Routes\routes.php(26): include('C:\\xampp\\htdocs...')
-#4 C:\xampp\htdocs\gestion_restaurante\gestionRestauranteSettings\routes_controller.php(7): include('C:\\xampp\\htdocs...')
-#5 C:\xampp\htdocs\gestion_restaurante\index.php(14): RoutesController->index()
-#6 {main}
-  thrown in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 81
-[12-Aug-2023 05:55:11 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function PostController::fncResponse(), 1 passed in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 50 and exactly 2 expected in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php:81
-Stack trace:
-#0 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php(50): PostController->fncResponse(409)
-#1 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\views\post.php(42): PostController::createMenuTemp(Array)
-#2 C:\xampp\htdocs\gestion_restaurante\Routes\services\post.php(38): require_once('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\gestion_restaurante\Routes\routes.php(26): include('C:\\xampp\\htdocs...')
-#4 C:\xampp\htdocs\gestion_restaurante\gestionRestauranteSettings\routes_controller.php(7): include('C:\\xampp\\htdocs...')
-#5 C:\xampp\htdocs\gestion_restaurante\index.php(14): RoutesController->index()
-#6 {main}
-  thrown in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 81
-[12-Aug-2023 05:56:07 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function PostController::fncResponse(), 1 passed in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 52 and exactly 2 expected in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php:83
-Stack trace:
-#0 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php(52): PostController->fncResponse(409)
-#1 C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\views\post.php(42): PostController::createMenuTemp(Array)
-#2 C:\xampp\htdocs\gestion_restaurante\Routes\services\post.php(38): require_once('C:\\xampp\\htdocs...')
-#3 C:\xampp\htdocs\gestion_restaurante\Routes\routes.php(26): include('C:\\xampp\\htdocs...')
-#4 C:\xampp\htdocs\gestion_restaurante\gestionRestauranteSettings\routes_controller.php(7): include('C:\\xampp\\htdocs...')
-#5 C:\xampp\htdocs\gestion_restaurante\index.php(14): RoutesController->index()
-#6 {main}
-  thrown in C:\xampp\htdocs\gestion_restaurante\APPS\Inventory\controller\post_controler.php on line 83
+[31-Aug-2023 08:50:10 Europe/Berlin] PHP Warning:  Undefined variable $response in C:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\delete_controler.php on line 18
+[31-Aug-2023 08:50:10 Europe/Berlin] PHP Warning:  Undefined variable $json in C:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\delete_controler.php on line 52
+[31-Aug-2023 08:50:10 Europe/Berlin] PHP Warning:  Undefined variable $json in C:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\delete_controler.php on line 52
+[31-Aug-2023 08:50:10 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\delete_controler.php on line 52
+[31-Aug-2023 08:56:03 Europe/Berlin] Session Destroy From Delete

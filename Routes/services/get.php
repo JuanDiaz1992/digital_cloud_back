@@ -37,6 +37,8 @@ if($module == 'user'){
     require_once "APPS/Business/views/get.php";
 }else if($module == 'inventory'){
     require_once "APPS/Inventory/views/get.php";
+}else if($module == 'menu_management'){
+    require_once "APPS/Menu_management/views/get.php";
 }
 
 

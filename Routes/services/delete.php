@@ -37,6 +37,8 @@ if($module==='user'){
     require_once "APPS/User/views/delete.php";
 }else if($module == 'inventory'){
     require_once "APPS/Inventory/views/delete.php";
+}else if($module == 'menu_management'){
+    require_once "APPS/Menu_management/views/delete.php";
 }
 
 
