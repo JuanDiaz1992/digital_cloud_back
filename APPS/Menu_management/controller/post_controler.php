@@ -6,30 +6,6 @@ require_once "APPS/Menu_management/model/post_model.php";
 class PostController{
 
 
-    /************************Metodo para crear usuarios nuevos *********************/
-    static public function postRecordInventoryController($table, $purchaseValue, $reason, $observations, $idProfile_user){
-            if ($purchaseValue && $reason &&  $idProfile_user) {
-                if($observations ===""){
-                    $observations = "No hay observaciones";
-                }
-                $response = PostModel::postRecordInventoryModel($table, $purchaseValue, $reason, $observations, $idProfile_user);
-                $return = new PostController();
-                if ($response == 404){
-                    $return -> fncResponse($response,404);
-    
-                }elseif($response == 200){
-                    $return -> fncResponse($response,200);
-                }
-            }else{
-                $json = array(
-                    'status' => 404,
-                    'message' => 'Hay datos sin rellenar'
-                );
-                echo json_encode($json, http_response_code($json['status']));
-                exit;
-            }
-    }
-
     //Esta parte es la encargada de gestionar el menú 
     static public function createMenuTemp($item){
         $return = new PostController();
@@ -68,6 +44,9 @@ class PostController{
             move_uploaded_file($photo['tmp_name'], $rutaArchivo);
         }else{//Si no hay una foto, se incluye la foto por defecto
             $rutaArchivoRelativa = "files/images/sin_imagen.webp";
+        }
+        if(!isset($price)){
+            $price = 0;
         }
         $response = PostModel::createItemMenuModel($table,$name,$description,$price,$rutaArchivoRelativa,$menu_item_type,$idProfile_user);
         $return = new PostController();
