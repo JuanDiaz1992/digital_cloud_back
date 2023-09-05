@@ -7,13 +7,7 @@ if(isset($token)){
     session_start();
     
     if(isset($_SESSION["estatus"]) == true){
-        if($table == 'inventoryBuysForDate'){
-            $response -> getInventoryForDate("buys",$_GET["linkTo"],$_GET["equalTo"]);
-        }
-        else if($table == 'inventoryBillsForDate'){
-            $response -> getInventoryForDate("bills",$_GET["linkTo"],$_GET["equalTo"]);
-        }
-        else if($table == 'items_menu'){
+        if($table == 'items_menu'){
             $response -> getData($table,$select);
         }
         else if($table =='items_menu_temp'){

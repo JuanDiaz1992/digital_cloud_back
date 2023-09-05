@@ -57,6 +57,12 @@ class PostController{
             $return -> fncResponse($response,200);
         }
     }
+    static public function createMenu(){
+        $response = $_SESSION["menu_temp"];
+        foreach ($response as $element){
+            error_log(print_r($element, true));
+        }
+    }
     
 
     //Respuesta del controlador:

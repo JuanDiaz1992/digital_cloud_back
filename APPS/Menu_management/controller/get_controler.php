@@ -25,8 +25,39 @@ class GetController{
     }
     static public function getDataBySession(){
         $response = $_SESSION["menu_temp"];
+        // Arreglos para cada tipo de menú
+        $especialities = [];
+        $soups = [];
+        $beginning = [];
+        $meats = [];
+        $drinks = [];
+        // Clasifica los elementos en los arreglos correspondientes
+        foreach ($response as $element) {
+            switch ($element['menu_item_type']) {
+                case 'especialities':
+                    $especialities[] = $element;
+                    break;
+                case 'soups':
+                    $soups[] = $element;
+                    break;
+                case 'beginning':
+                    $beginning[] = $element;
+                    break;
+                case 'meats':
+                    $meats[] = $element;
+                    break;
+                case 'drinks':
+                    $drinks[] = $element;
+                    break;
+            }
+        }
+        // Combina los arreglos en el orden deseado
+        $orderedResponse = array_merge($especialities, $soups, $beginning, $meats, $drinks);
+        $_SESSION["menu_temp"] = $orderedResponse;
+        // Registra el array ordenado en el archivo de registro de errores
+        // error_log(print_r($orderedResponse, true));
         $return = new GetController();
-        $return -> fncResponse($response);
+        $return -> fncResponse($orderedResponse);
     }
 
 
