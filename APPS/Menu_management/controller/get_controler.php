@@ -18,11 +18,7 @@ class GetController{
 
     }
 
-    static public function getInventoryForDate($table,$linkTo,$equalTo){
-        $response = GetModel::getInventoryForDateModel($table,$linkTo,$equalTo);
-        $return = new GetController();
-        $return -> fncResponse($response);
-    }
+
     static public function getDataBySession(){
         $response = $_SESSION["menu_temp"];
         // Arreglos para cada tipo de menú

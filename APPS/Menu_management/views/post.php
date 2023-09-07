@@ -22,7 +22,9 @@ if($token && $_SESSION["type_user"] === 'Admin'){
             $_POST["idProfile_user"],
         );
     }else if(isset($data["create_menu"])){
-        $response -> createMenu();
+        $date = $data["date"];
+        error_log($date);
+        $response -> createMenu($date);
     }
 
 }else{

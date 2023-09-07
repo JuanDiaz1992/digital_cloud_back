@@ -57,11 +57,36 @@ class PostController{
             $return -> fncResponse($response,200);
         }
     }
-    static public function createMenu(){
-        $response = $_SESSION["menu_temp"];
-        foreach ($response as $element){
-            error_log(print_r($element, true));
+
+
+    static public function createMenu($date){
+        $menuTemp = $_SESSION["menu_temp"];
+        $response = PostModel::postRecordMenuyModel("menu",$date);
+        $return = new PostController();
+        $allElementsSaved = true; // Variable de registro
+        if ($response["response"] === 200 ) {
+            foreach ($menuTemp as $element){
+                // error_log(print_r($response, true));
+                // error_log($response["id"]);
+                $responseItem = PostModel::postRecordAllMenusModel("all_menus",$response["id"],$element["id"],$date);
+                if($responseItem !== 200){
+                    $allElementsSaved = false;
+                    break;
+                }
+            }
+            if ($allElementsSaved) {
+                $_SESSION["menu_temp"] = [];
+                // Todos los elementos se guardaron correctamente, enviar respuesta exitosa
+                $return->fncResponse("MEnú creado correctamente", 200);
+                
+            } else {
+                // Al menos un elemento falló, enviar respuesta de error
+                $return->fncResponse("Error al crear el menú", 404);
+            }
+        }else{
+            $return -> fncResponse($response,404);
         }
+
     }
     
 

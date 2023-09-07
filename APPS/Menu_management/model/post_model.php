@@ -4,15 +4,35 @@
 require_once "gestionRestauranteSettings/Connection.php";
 class PostModel{
     //Creación de Usuario nuevo 
-    static public function postRecordInventoryModel($table, $purchaseValue, $reason, $observations, $idProfile_user){   
-       
-        $sql = "INSERT INTO $table (purchaseValue, reason, observations, idProfile_user) VALUES (:purchaseValue, :reason, :observations, :idProfile_user)";
+    static public function postRecordMenuyModel($table,$date){   
+        $sql = "INSERT INTO $table (date) VALUES (:date)";
+        $stmt = Connection::connect();
+        $stmtFull =  $stmt->prepare($sql);
+        $stmtFull->bindParam(':date', $date);
+        $stmtFull->execute();
+        $rowCount = $stmtFull->rowCount();
+        $lastInsertId = $stmt->lastInsertId(); //Retorna el último id creado
+        error_log($lastInsertId);
+        if(isset($rowCount)){
+            $data = [
+                "id"=>$lastInsertId,
+                "response"=>200
+            ];
+            return $data;
+        }else{
+            $data = [
+                "response"=>400
+            ];
+            return $data;
+        }
+
+    }
+    static public function postRecordAllMenusModel($table,$idMenu,$idItem,$date){   
+        $sql = "INSERT INTO $table (menu,contenido, date) VALUES (:menu,:contenido,:date)";
         $stmt = Connection::connect()->prepare($sql);
-        
-        $stmt->bindParam(':purchaseValue', $purchaseValue);
-        $stmt->bindParam(':reason', $reason);
-        $stmt->bindParam(':observations', $observations);
-        $stmt->bindParam(':idProfile_user', $idProfile_user);
+        $stmt->bindParam(':menu', $idMenu);
+        $stmt->bindParam(':contenido', $idItem);
+        $stmt->bindParam(':date', $date);
         $stmt->execute();
         $rowCount = $stmt->rowCount();
         if(isset($rowCount)){
