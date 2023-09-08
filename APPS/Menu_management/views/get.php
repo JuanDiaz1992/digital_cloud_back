@@ -12,6 +12,10 @@ if(isset($token)){
         }
         else if($table =='items_menu_temp'){
             $response ->getDataBySession();
+        }else if($table == 'items_menuJoin'){
+            $table = "items_menu";
+            $response ->getDataWithJoin($table,$select,$_GET["linkTo"],$_GET["equalTo"]);
+
         }
         else{
             //Aqui validamos si la consulta es de tipo where, sino es una consulta a toda la tabla 

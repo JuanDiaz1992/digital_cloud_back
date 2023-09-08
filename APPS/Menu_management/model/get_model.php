@@ -33,6 +33,16 @@ class GetModel{
 
     }
 
+    static public function getDataWithJoin($table, $select, $linkTo, $equalTo){
+        $sql = "SELECT * FROM $table JOIN all_menus ON items_menu.id = all_menus.contenido WHERE all_menus.menu = :menu";
+        $stmt = Connection::connect()->prepare($sql);
+        $stmt->bindParam(':menu', $equalTo);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
+    }
+    
+    
+
     static public function getInventoryForDateModel($table,$linkTo,$equalTo){
         $linkToArray = explode(",",$linkTo);
         $equalToArray = explode("_",$equalTo);

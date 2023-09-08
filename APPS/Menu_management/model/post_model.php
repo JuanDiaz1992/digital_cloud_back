@@ -28,11 +28,13 @@ class PostModel{
 
     }
     static public function postRecordAllMenusModel($table,$idMenu,$idItem,$date){   
-        $sql = "INSERT INTO $table (menu,contenido, date) VALUES (:menu,:contenido,:date)";
+        $sql = "INSERT INTO $table (menu,contenido, date, state) VALUES (:menu,:contenido,:date, :state)";
+        $stateNumber = 1;
         $stmt = Connection::connect()->prepare($sql);
         $stmt->bindParam(':menu', $idMenu);
         $stmt->bindParam(':contenido', $idItem);
         $stmt->bindParam(':date', $date);
+        $stmt->bindParam(':state', $stateNumber);
         $stmt->execute();
         $rowCount = $stmt->rowCount();
         if(isset($rowCount)){

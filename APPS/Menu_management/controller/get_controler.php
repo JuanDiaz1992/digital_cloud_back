@@ -56,6 +56,13 @@ class GetController{
         $return -> fncResponse($orderedResponse);
     }
 
+    
+    static public function getDataWithJoin($table, $select, $linkTo, $equalTo){
+        $response = GetModel::getDataWithJoin($table, $select, $linkTo, $equalTo);
+        $return = new GetController();
+        $return->fncResponse($response);
+    }
+    
 
     
     //Respuesta del controlador:
