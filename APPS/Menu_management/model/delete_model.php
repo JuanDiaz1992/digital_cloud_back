@@ -19,6 +19,20 @@ class DeleteModel{
         }
         
     }
+
+    static public function deleteMenufromBdModel($table,$idMenu){
+        $sql = "DELETE FROM $table WHERE id = :id";
+        $stmt = Connection::connect()->prepare($sql);
+        $stmt->bindParam(":id", $idMenu, PDO::PARAM_INT);
+        $stmt->execute();
+        $rowCount = $stmt->rowCount();
+
+        if ($rowCount > 0) {
+            return 200;
+        } else {
+            return 404;
+        }
+    }
 }
 
 

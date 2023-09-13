@@ -41,13 +41,4 @@ if($module == 'user'){
     require_once "APPS/Menu_management/views/get.php";
 }
 
-
-
-
-
-
-
-
-
-
 ?>

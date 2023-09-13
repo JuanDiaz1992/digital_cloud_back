@@ -1,10 +1,9 @@
 <?php
-
 class Connection{
     //Información de la base de datos
     static public function infoDatabase(){
         $infoDB = array(
-            "database" => "gestion_restaurante_php",
+            "database" => "gestion_restaurante_mysql",
             "user"=> "root",
             "pass" => "3118514322s"
         );
@@ -27,5 +26,7 @@ class Connection{
     }
 
 }
+
+
 
 ?>

@@ -11,6 +11,12 @@ class DeleteController{
         $return -> deleteIfromSesion($id);
         $return -> fncResponse($response);
     }
+
+    static public function deleteMenufromBd($table,$idMenu){
+        $response = DeleteModel::deleteMenufromBdModel($table,$idMenu);
+        $return = new DeleteController();
+        $return -> fncResponse($response);
+    }
     static public function deleteItemTemporal($id){
         $return = new DeleteController();
         $result = $return -> deleteIfromSesion($id);
