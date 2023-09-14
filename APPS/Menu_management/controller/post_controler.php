@@ -88,6 +88,23 @@ class PostController{
         }
 
     }
+
+    static public function editMenu($table,$ids,$idMEnu,$dateTime){
+        $return = new PostController();
+        $allElementsSaved = true; // Variable de registro
+        foreach ($ids as $id){
+            $responseItem = PostModel::postRecordAllMenusModel($table,$idMEnu,$id,$dateTime);
+            if($responseItem !== 200){
+                $allElementsSaved = false;
+                break;
+            }
+        }
+        if ($allElementsSaved) {
+            $return->fncResponse("MEnú creado correctamente", 200);
+        } else {
+            $return->fncResponse("Error al crear el menú", 404);
+        }
+    }
     
 
     //Respuesta del controlador:

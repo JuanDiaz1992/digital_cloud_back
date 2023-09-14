@@ -22,9 +22,10 @@ if($token && $_SESSION["type_user"] === 'Admin'){
             $_POST["idProfile_user"],
         );
     }else if(isset($data["create_menu"])){
-        $date = $data["date"];
-        error_log($date);
-        $response -> createMenu($date);
+        $response -> createMenu($data["date"]);
+    }else if(isset($data["edit_menu"])){
+        $table = "all_menus";
+        $response -> editMenu($table,$data["ids"],$data["idMEnu"],$data["dateTime"]);
     }
 
 }else{
