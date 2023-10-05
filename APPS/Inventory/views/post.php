@@ -14,7 +14,8 @@ if(isset($data["record_buys"])){
             $data["purchaseValue"],
             $data["reason"],
             $data["observations"],
-            $data["idProfile_user"]
+            $data["idProfile_user"],
+            $data["dateTime"]
         );
     }else{
         badResponse();
@@ -30,7 +31,8 @@ if(isset($data["record_buys"])){
             $data["purchaseValue"],
             $data["reason"],
             $data["observations"],
-            $data["idProfile_user"]
+            $data["idProfile_user"],
+            $data["dateTime"]
         );
     }else{
         badResponse();

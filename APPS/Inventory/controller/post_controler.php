@@ -7,12 +7,12 @@ class PostController{
 
 
     /************************Metodo para crear usuarios nuevos *********************/
-    static public function postRecordInventoryController($table, $purchaseValue, $reason, $observations, $idProfile_user){
+    static public function postRecordInventoryController($table, $purchaseValue, $reason, $observations, $idProfile_user,$date){
             if ($purchaseValue && $reason &&  $idProfile_user) {
                 if($observations ===""){
                     $observations = "No hay observaciones";
                 }
-                $response = PostModel::postRecordInventoryModel($table, $purchaseValue, $reason, $observations, $idProfile_user);
+                $response = PostModel::postRecordInventoryModel($table, $purchaseValue, $reason, $observations, $idProfile_user,$date);
                 $return = new PostController();
                 if ($response == 404){
                     $return -> fncResponse($response,404);
