@@ -11,6 +11,13 @@ class GetController{
 
 
     }
+    static public function getDataFilterSimple($table,$select,$linkTo,$equalTo){
+        $response = GetModel::getDataFilterSimpleModel($table,$select,$linkTo,$equalTo);
+        $return = new GetController();
+        $return -> fncResponse($response);
+
+    }
+
     static public function getDataFilter($table,$select,$linkTo,$equalTo){
         $response = GetModel::getDataFilter($table,$select,$linkTo,$equalTo);
         $return = new GetController();

@@ -5,7 +5,7 @@ class Connection{
         $infoDB = array(
             "database" => "gestion_restaurante_mysql",
             "user"=> "root",
-            "pass" => "3118514322s"
+            "pass" => ""
         );
         return $infoDB;
     }

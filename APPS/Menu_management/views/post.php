@@ -20,6 +20,7 @@ if($token && $_SESSION["type_user"] === 'Admin'){
             $img,
             $_POST["menu_item_type"],
             $_POST["idProfile_user"],
+            $_POST["amount"],
         );
     }else if(isset($data["create_menu"])){
         $response -> createMenu($data["date"]);

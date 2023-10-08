@@ -29,7 +29,7 @@ class PostController{
             $return -> fncResponse($response,409);
         }
     }
-    static public function createItemMenu($table,$name,$description,$price,$photo,$menu_item_type,$idProfile_user){
+    static public function createItemMenu($table,$name,$description,$price,$photo,$menu_item_type,$idProfile_user,$amount){
         if(isset($photo['name'])){ //Si el formulario incluye una imagen, la agrega, sino se pone la img por defecto
             $carpetaDestino = __DIR__ . "../../../../files/images/MenuItems";
             $nombreArchivo = $photo['name'];
@@ -48,7 +48,7 @@ class PostController{
         if(!isset($price)){
             $price = 0;
         }
-        $response = PostModel::createItemMenuModel($table,$name,$description,$price,$rutaArchivoRelativa,$menu_item_type,$idProfile_user);
+        $response = PostModel::createItemMenuModel($table,$name,$description,$price,$rutaArchivoRelativa,$menu_item_type,$idProfile_user,$amount);
         $return = new PostController();
         if ($response == 404){
             $return -> fncResponse($response,404);

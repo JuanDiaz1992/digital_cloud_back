@@ -10,7 +10,7 @@ class GetModel{
         $stmt-> execute();
         return $stmt-> fetchAll(PDO::FETCH_CLASS);
     }
-    //Peticiones get con filtro
+
     static public function getDataFilter($table,$select,$linkTo,$equalTo){
         $linkToArray = explode(",",$linkTo);
         $equalToArray = explode("_",$equalTo);
