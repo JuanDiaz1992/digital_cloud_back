@@ -66,8 +66,10 @@ class GetController{
     
     static public function getDataWithJoin($table, $select, $linkTo, $equalTo){
         $response = GetModel::getDataWithJoin($table, $select, $linkTo, $equalTo);
+        $softDrinks= GetModel::getDataFilterSimpleModel("items_menu","*","menu_item_type","soft_drinks");
+        $resultado = array_merge($response, $softDrinks);
         $return = new GetController();
-        $return->fncResponse($response);
+        $return->fncResponse($resultado);
     }
     
 

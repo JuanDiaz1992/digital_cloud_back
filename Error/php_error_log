@@ -1,0 +1,63 @@
+[10-Oct-2023 03:10:34 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
+[10-Oct-2023 03:10:34 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
+[10-Oct-2023 03:10:34 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
+[10-Oct-2023 03:10:34 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 40
+[10-Oct-2023 03:12:23 Europe/Berlin] PHP Warning:  Undefined variable $array1 in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 70
+[10-Oct-2023 03:12:23 Europe/Berlin] PHP Warning:  Undefined variable $array2 in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 70
+[10-Oct-2023 03:12:23 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php:70
+Stack trace:
+#0 F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php(70): array_merge(NULL, NULL)
+#1 F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\views\get.php(7): GetController::getDataWithJoin('items_menu', '*', 'menu', '119')
+#2 F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php(41): require_once('F:\\xampp\\htdocs...')
+#3 F:\xampp\htdocs\gestion_restaurante\Routes\routes.php(22): include('F:\\xampp\\htdocs...')
+#4 F:\xampp\htdocs\gestion_restaurante\gestionRestauranteSettings\routes_controller.php(7): include('F:\\xampp\\htdocs...')
+#5 F:\xampp\htdocs\gestion_restaurante\index.php(14): RoutesController->index()
+#6 {main}
+  thrown in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 70
+[10-Oct-2023 03:12:23 Europe/Berlin] PHP Warning:  Undefined variable $array1 in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 70
+[10-Oct-2023 03:12:23 Europe/Berlin] PHP Warning:  Undefined variable $array2 in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 70
+[10-Oct-2023 03:12:23 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #1 must be of type array, null given in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php:70
+Stack trace:
+#0 F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php(70): array_merge(NULL, NULL)
+#1 F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\views\get.php(7): GetController::getDataWithJoin('items_menu', '*', 'menu', '119')
+#2 F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php(41): require_once('F:\\xampp\\htdocs...')
+#3 F:\xampp\htdocs\gestion_restaurante\Routes\routes.php(22): include('F:\\xampp\\htdocs...')
+#4 F:\xampp\htdocs\gestion_restaurante\gestionRestauranteSettings\routes_controller.php(7): include('F:\\xampp\\htdocs...')
+#5 F:\xampp\htdocs\gestion_restaurante\index.php(14): RoutesController->index()
+#6 {main}
+  thrown in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 70
+[10-Oct-2023 03:18:51 Europe/Berlin] 120
+[10-Oct-2023 03:32:35 Europe/Berlin] Session Destroy From Delete
+[10-Oct-2023 03:32:44 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 30
+[10-Oct-2023 03:32:44 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 38
+[10-Oct-2023 03:35:47 Europe/Berlin] 121
+[10-Oct-2023 03:46:55 Europe/Berlin] 122
+[10-Oct-2023 03:48:14 Europe/Berlin] 123
+[10-Oct-2023 03:49:03 Europe/Berlin] Session Destroy From Delete
+[10-Oct-2023 03:49:23 Europe/Berlin] Session Destroy From Delete
+[10-Oct-2023 03:49:35 Europe/Berlin] Session Destroy From Delete
+[10-Oct-2023 03:51:21 Europe/Berlin] Session Destroy From Delete
+[10-Oct-2023 03:52:04 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 30
+[10-Oct-2023 03:52:04 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 38
+[10-Oct-2023 03:52:16 Europe/Berlin] Session Destroy From Delete
+[10-Oct-2023 03:52:40 Europe/Berlin] Session Destroy From Delete
+[10-Oct-2023 03:52:46 Europe/Berlin] Session Destroy From Delete
+[10-Oct-2023 03:52:54 Europe/Berlin] Session Destroy From Delete
+[10-Oct-2023 04:56:21 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 30
+[10-Oct-2023 04:56:21 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 38
+[10-Oct-2023 05:42:50 Europe/Berlin] 124
+[10-Oct-2023 05:51:03 Europe/Berlin] Session Destroy From Delete
+[10-Oct-2023 05:53:31 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 30
+[10-Oct-2023 05:53:31 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 38
+[10-Oct-2023 05:54:25 Europe/Berlin] 125
+[10-Oct-2023 05:54:27 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2023-10-09' for key 'unique_date' in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\model\post_model.php:12
+Stack trace:
+#0 F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\model\post_model.php(12): PDOStatement->execute()
+#1 F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\post_controler.php(64): PostModel::postRecordMenuyModel('menu', '2023-10-09')
+#2 F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\views\post.php(26): PostController::createMenu('2023-10-09')
+#3 F:\xampp\htdocs\gestion_restaurante\Routes\services\post.php(36): require_once('F:\\xampp\\htdocs...')
+#4 F:\xampp\htdocs\gestion_restaurante\Routes\routes.php(26): include('F:\\xampp\\htdocs...')
+#5 F:\xampp\htdocs\gestion_restaurante\gestionRestauranteSettings\routes_controller.php(7): include('F:\\xampp\\htdocs...')
+#6 F:\xampp\htdocs\gestion_restaurante\index.php(14): RoutesController->index()
+#7 {main}
+  thrown in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\model\post_model.php on line 12

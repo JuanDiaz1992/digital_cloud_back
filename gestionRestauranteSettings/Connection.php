@@ -4,8 +4,8 @@ class Connection{
     static public function infoDatabase(){
         $infoDB = array(
             "database" => "gestion_restaurante_mysql",
-            "user"=> "root",
-            "pass" => ""
+            "user"=> "administrador",
+            "pass" => "3118514322s"
         );
         return $infoDB;
     }
