@@ -31,7 +31,6 @@ if(isset($data["login_request"])){
     session_start();
     if($token && $_SESSION["type_user"] === 'Admin'){
         $img = isset($_FILES['photo'])? $_FILES['photo'] : '';
-    
         $response ->postControllerModify(
             $_POST['id'],
             $_POST['name'],
@@ -51,10 +50,7 @@ if(isset($data["login_request"])){
             $data['password'],
             $data['confirmPassword'],
         );
-        error_log("Solicitud Recibida");
-    }
-    
-    
+    }    
 }else{
     badResponse();
 }

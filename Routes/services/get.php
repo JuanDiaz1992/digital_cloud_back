@@ -22,13 +22,11 @@ if (isset($_SERVER['HTTP_AUTHORIZATION'])) {
     }
     $username = isset($_SERVER['HTTP_X_USERNAME']) ? $_SERVER['HTTP_X_USERNAME'] : "";
 }
+
 if (isset($_SERVER['HTTP_MODULE'])) {
-    if(isset($_SERVER['HTTP_MODULE'])){
-        $module = $_SERVER['HTTP_MODULE'];
-    }
-    else{
-        badResponse();
-    }
+    $module = $_SERVER['HTTP_MODULE'];
+}else{
+    badResponse();
 }
 
 if($module == 'user'){
