@@ -10,9 +10,6 @@ if(isset($token)){
         if($table == 'inventoryBuysForDate'){
             $response -> getInventoryForDate("buys",$_GET["linkTo"],$_GET["equalTo"]);
         }
-        else if($table == 'inventoryBillsForDate'){
-            $response -> getInventoryForDate("bills",$_GET["linkTo"],$_GET["equalTo"]);
-        }
         else{
             //Aqui validamos si la consulta es de tipo where, sino es una consulta a toda la tabla 
             if (isset($_GET["linkTo"]) && isset($_GET["equalTo"])) {

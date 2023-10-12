@@ -10,9 +10,6 @@ if($token && $_SESSION["type_user"] === 'Admin'){
         $table = "buys";
         $response -> deleteItemInvetoryController($table,$data["idItem"]);
 
-    }else if(isset($data["delete_bills_inventory"])){
-        $table = "bills";
-        $response -> deleteItemInvetoryController($table,$data["idItem"]);
     }
 }else{
     badResponse();

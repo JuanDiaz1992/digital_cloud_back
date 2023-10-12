@@ -4,7 +4,7 @@ $response = new GetController();
 
 if ($table === "get_menu_index") {
     $table = "items_menu";
-    $response ->getDataWithJoin($table,$select,$_GET["linkTo"],$_GET["equalTo"]);
+    $response ->getDataWithJoinFromIndex($table,$select,$_GET["linkTo"],$_GET["equalTo"]);
 }else if($table === "menu" && isset($_GET["linkTo"]) && isset($_GET["equalTo"])){
     $response -> getDataFilter($table ,$select,$_GET["linkTo"],$_GET["equalTo"]);
 }else {
@@ -24,7 +24,7 @@ if ($table === "get_menu_index") {
                 $response ->getDataBySession();
             }else if($table == 'items_menuJoin'){
                 $table = "items_menu";
-                $response ->getDataWithJoin("$table",$select,$_GET["linkTo"],$_GET["equalTo"]);
+                $response ->getDataWithJoinFromAdmin("$table",$select,$_GET["linkTo"],$_GET["equalTo"]);
     
             }
             else{
