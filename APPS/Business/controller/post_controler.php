@@ -1,19 +1,17 @@
 <?php
 
-require_once "APPS/User/model/post_model.php";
+require_once "APPS/Business/model/post_model.php";
 
 
 class PostController{
-
-
-    /************************Metodo para crear usuarios nuevos *********************/
-    static public function postControllerCreateUser($id_business,$userName, $password, $confirmPassword, $name, $photo, $type_user){
-    
-        if (!preg_match('/^[a-zA-Z0-9]+$/', $userName) || //En este if se validan caracteres especiales
-            !preg_match('/^[a-zA-Z0-9]+$/', $password) ||
-            !preg_match('/^[a-zA-Z\s]+$/', $name) ||
-            !preg_match('/^[a-zA-Z0-9]+$/', $confirmPassword) ||
-            !preg_match('/^[a-zA-Z0-9]+$/', $type_user)) {
+    static public function postControllerCreateinfoBusiness($table,$nameBusiness,$documentBusiness
+    ,$description,$address,$numberPhone,$officeHours,$photo){    
+        if (!preg_match('/^[a-zA-Z0-9ñÑ]+$/', $nameBusiness) || //En este if se validan caracteres especiales
+            !preg_match('/^[a-zA-Z0-9-_]+$/', $documentBusiness) ||
+            !preg_match('/^[a-zA-Z0-9ñÑ-_]+$/', $description) ||
+            !preg_match('/^[a-zA-Z0-9ñÑ-_#]+$/', $address) ||
+            !preg_match('/^[a-zA-Z0-9ñÑ-_#]+$/', $officeHours) ||
+            !preg_match('/^[0-9-_]+$/', $numberPhone)) {
                 $json = array(
                     'status' => 404,
                     'is_logged_in' => false,
@@ -21,37 +19,21 @@ class PostController{
                 );
                 echo json_encode($json, http_response_code($json['status']));
                 exit;
-            }
-
-            if ($password !== $confirmPassword) { //Aquí se valida que la contraseña sea correcta 
-                $json = array(
-                    'status' => 404,
-                    'is_logged_in' => false,
-                    'message' => 'Las contraseñas no coinciden'
-                );
-                echo json_encode($json, http_response_code($json['status']));
-                exit;
-            }
-            
-            if(isset($photo['name'])){ //Si el formulario incluye una imagen, la agrega, sino se pone la img por defecto
-                $carpetaDestino = __DIR__ . "/../files/user_profile/" . $userName;
+            }           
+            if(isset($photo['name'])){
+                $carpetaDestino = __DIR__ . "/../files/images/business_profile/";
                 $nombreArchivo = $photo['name'];
                 $rutaArchivo = $carpetaDestino . DIRECTORY_SEPARATOR . $nombreArchivo;
-                
                 if (!is_dir($carpetaDestino)) {
                     mkdir($carpetaDestino, 0777, true);
                 }
-                
-                $rutaArchivoRelativa = 'files/user_profile/' . $userName .'/'. $nombreArchivo;
-                
+                $rutaArchivoRelativa = 'files/images/business_profile/'. $nombreArchivo;
                 move_uploaded_file($photo['tmp_name'], $rutaArchivo);
             }else{
-                $rutaArchivoRelativa = "files/images/sin_imagen.webp";
+                $rutaArchivoRelativa = "";
             }
-
-            
-            $hashedPassword = password_hash($password, PASSWORD_DEFAULT); //Aquí se genera un hash para la contraseña
-            $response = PostModel::postDataCreateUser($id_business,$userName, $hashedPassword, $name, $rutaArchivoRelativa, $type_user);
+            $response = PostModel::postDataCreateInfoBusiness($table,$nameBusiness,$documentBusiness
+            ,$description,$address,$numberPhone,$officeHours,$rutaArchivoRelativa);
             $return = new PostController();
             if ($response == 404){
                 $return -> fncResponse($response,404);

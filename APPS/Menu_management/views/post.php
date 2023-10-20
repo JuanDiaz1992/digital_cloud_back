@@ -12,6 +12,7 @@ if($token && $_SESSION["type_user"] === 'Admin'){
     }else if(isset($_POST["new_item_menu"])){
         $table = "items_menu";
         $img = isset($_FILES['photo'])? $_FILES['photo'] : '';
+        $amount = isset($_POST["amount"])? $_POST["amount"] : 0;
         $response -> createItemMenu(
             $table,
             $_POST["name"],
@@ -20,7 +21,7 @@ if($token && $_SESSION["type_user"] === 'Admin'){
             $img,
             $_POST["menu_item_type"],
             $_POST["idProfile_user"],
-            $_POST["amount"],
+            $amount,
         );
     }else if(isset($data["create_menu"])){
         $response -> createMenu($data["date"]);

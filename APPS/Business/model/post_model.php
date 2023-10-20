@@ -4,29 +4,41 @@
 require_once "gestionRestauranteSettings/Connection.php";
 class PostModel{
     //Creación de Usuario nuevo 
-    static public function postDataCreateUser($id_business,$userName, $password, $name, $photo, $type_user)
+    static public function postDataCreateInfoBusiness($table,$nameBusiness,$documentBusiness
+    ,$description,$address,$numberPhone,$officeHours,$rutaArchivoRelativa)
     {   
-        $sql = "SELECT * FROM profile_user WHERE username = :username";
+        $sql = "INSERT INTO $table (
+            name_business, 
+            document_business, 
+            logo, 
+            Description, 
+            office_hours, 
+            address, 
+            number_phone ) VALUES (
+                :name_business, 
+                :document_business, 
+                :logo, 
+                :Description, 
+                :office_hours, 
+                :address,
+                :number_phone)";
         $stmt = Connection::connect()->prepare($sql);
-        $stmt->bindParam(":username", $userName, PDO::PARAM_STR);
+        $stmt->bindParam(':name_business', $userName);
+        $stmt->bindParam(':document_business', $password);
+        $stmt->bindParam(':logo', $name);
+        $stmt->bindParam(':Description', $photo);
+        $stmt->bindParam(':office_hours', $type_user);
+        $stmt->bindParam(':address', $id_business);
+        $stmt->bindParam(':number_phone', $id_business);
         $stmt->execute();
-        $row = $stmt->fetch();
-        if($row){
-            return 409;
-        }else{
-            $sql = "INSERT INTO profile_user (username, password, name, photo, type_user, id_negocio) VALUES (:username, :password, :name, :photo, :type_user, :id_negocio)";
-            $stmt = Connection::connect()->prepare($sql);
-            
-            $stmt->bindParam(':username', $userName);
-            $stmt->bindParam(':password', $password);
-            $stmt->bindParam(':name', $name);
-            $stmt->bindParam(':photo', $photo);
-            $stmt->bindParam(':type_user', $type_user);
-            $stmt->bindParam(':id_negocio', $id_business);
-            $stmt->execute();
-            $rowCount = $stmt->rowCount();
+        $rowCount = $stmt->rowCount();
+        if ($rowCount) {
             return 200;
+        }else{
+            return 400;
         }
+
+        
 
     }
 
