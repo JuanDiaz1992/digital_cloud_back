@@ -65,6 +65,25 @@ class PostModel{
         }
     }
 
+    static public function changeStateModel($table,$idMenu,$id,$state){
+        error_log($table);
+        error_log($idMenu);
+        error_log($id);
+        error_log($state);
+        $sql = "UPDATE $table SET state = :state WHERE menu = :menu AND id = :id";
+        $stmt = Connection::connect()->prepare($sql);
+        $stmt->bindParam(':state',$state,  PDO::PARAM_STR);
+        $stmt->bindParam(':menu', $idMenu,  PDO::PARAM_STR);
+        $stmt->bindParam(':id', $id,  PDO::PARAM_STR);
+        $stmt->execute();
+        $rowCount = $stmt->rowCount();
+        if ($rowCount > 0){
+            return 200;
+        }else{
+            return 404;
+        }
+    }
+
 
 }
 

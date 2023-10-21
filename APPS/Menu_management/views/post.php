@@ -28,6 +28,9 @@ if($token && $_SESSION["type_user"] === 'Admin'){
     }else if(isset($data["edit_menu"])){
         $table = "all_menus";
         $response -> editMenu($table,$data["ids"],$data["idMEnu"],$data["dateTime"]);
+    }else if(isset($data["supend_item_menu"])){
+        $table = "all_menus";
+        $response -> changeState($table,$data["idMenu"],$data["id"],$data["state"]);
     }
 
 }else{

@@ -57,8 +57,6 @@ class PostController{
             $return -> fncResponse($response,200);
         }
     }
-
-
     static public function createMenu($date){
         $menuTemp = $_SESSION["menu_temp"];
         $response = PostModel::postRecordMenuyModel("menu",$date);
@@ -88,7 +86,6 @@ class PostController{
         }
 
     }
-
     static public function editMenu($table,$ids,$idMEnu,$dateTime){
         $return = new PostController();
         $allElementsSaved = true; // Variable de registro
@@ -105,7 +102,16 @@ class PostController{
             $return->fncResponse("Error al crear el menú", 404);
         }
     }
-    
+    static public function changeState($table,$idMEnu,$id,$state){
+        $response = PostModel::changeStateModel($table,$idMEnu,$id,$state);
+        $return = new PostController();
+        if ($response == 400){
+            $return -> fncResponse($response,400);
+
+        }elseif($response == 200){
+            $return -> fncResponse($response,200);
+        }
+    }
 
     //Respuesta del controlador:
     public function fncResponse($response,$status){ //Metodo usado para dar respuestas básicas
@@ -127,7 +133,7 @@ class PostController{
         }else{
             $json = array(
                 'registered'=>false,
-                'status' => 404,
+                'status' => $status,
                 'results' => 'Not Found',
                 'message' => "No se pudo realizar el registro, valide los datos e intentelo de nuevo"
             );

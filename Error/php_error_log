@@ -1,39 +1,300 @@
-[20-Oct-2023 06:44:47 Europe/Berlin] PHP Warning:  Undefined array key "amount" in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\views\post.php on line 23
-[20-Oct-2023 06:49:10 Europe/Berlin] PHP Warning:  Undefined array key "amount" in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\views\post.php on line 24
-[20-Oct-2023 06:52:03 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
-[20-Oct-2023 06:52:03 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
-[20-Oct-2023 06:52:03 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
-[20-Oct-2023 06:52:03 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
-[20-Oct-2023 06:55:35 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
-[20-Oct-2023 06:55:35 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
-[20-Oct-2023 06:55:35 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
-[20-Oct-2023 06:55:35 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
-[20-Oct-2023 06:56:19 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
-[20-Oct-2023 06:56:19 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
-[20-Oct-2023 06:56:19 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
-[20-Oct-2023 06:56:19 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
-[20-Oct-2023 06:56:34 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
-[20-Oct-2023 06:56:34 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
-[20-Oct-2023 06:56:34 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
-[20-Oct-2023 06:56:34 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
-[20-Oct-2023 06:58:08 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
-[20-Oct-2023 06:58:08 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
-[20-Oct-2023 06:58:08 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
-[20-Oct-2023 06:58:08 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
-[20-Oct-2023 07:10:29 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
-[20-Oct-2023 07:10:29 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
-[20-Oct-2023 07:10:29 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
-[20-Oct-2023 07:10:29 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
-[20-Oct-2023 07:16:18 Europe/Berlin] 133
-[20-Oct-2023 07:28:55 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
-[20-Oct-2023 07:28:55 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
-[20-Oct-2023 07:28:55 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
-[20-Oct-2023 07:28:55 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
-[20-Oct-2023 07:31:01 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
-[20-Oct-2023 07:31:01 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
-[20-Oct-2023 07:31:01 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
-[20-Oct-2023 07:31:01 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
-[20-Oct-2023 07:33:46 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
-[20-Oct-2023 07:33:46 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
-[20-Oct-2023 07:33:46 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
-[20-Oct-2023 07:33:46 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
+[21-Oct-2023 03:21:24 Europe/Berlin] all_menus
+[21-Oct-2023 03:21:55 Europe/Berlin] all_menus
+[21-Oct-2023 03:21:55 Europe/Berlin] 146
+[21-Oct-2023 03:21:55 Europe/Berlin] 1428
+[21-Oct-2023 03:21:55 Europe/Berlin] 0
+[21-Oct-2023 03:28:52 Europe/Berlin] all_menus
+[21-Oct-2023 03:28:52 Europe/Berlin] 146
+[21-Oct-2023 03:28:52 Europe/Berlin] 1428
+[21-Oct-2023 03:28:52 Europe/Berlin] 0
+[21-Oct-2023 03:28:56 Europe/Berlin] all_menus
+[21-Oct-2023 03:28:56 Europe/Berlin] 146
+[21-Oct-2023 03:28:56 Europe/Berlin] 1429
+[21-Oct-2023 03:28:56 Europe/Berlin] 0
+[21-Oct-2023 03:28:59 Europe/Berlin] all_menus
+[21-Oct-2023 03:28:59 Europe/Berlin] 146
+[21-Oct-2023 03:28:59 Europe/Berlin] 1428
+[21-Oct-2023 03:28:59 Europe/Berlin] 1
+[21-Oct-2023 03:29:01 Europe/Berlin] all_menus
+[21-Oct-2023 03:29:01 Europe/Berlin] 146
+[21-Oct-2023 03:29:01 Europe/Berlin] 1429
+[21-Oct-2023 03:29:01 Europe/Berlin] 1
+[21-Oct-2023 03:30:05 Europe/Berlin] all_menus
+[21-Oct-2023 03:30:05 Europe/Berlin] 146
+[21-Oct-2023 03:30:05 Europe/Berlin] 1428
+[21-Oct-2023 03:30:05 Europe/Berlin] 0
+[21-Oct-2023 03:30:07 Europe/Berlin] all_menus
+[21-Oct-2023 03:30:07 Europe/Berlin] 146
+[21-Oct-2023 03:30:07 Europe/Berlin] 1428
+[21-Oct-2023 03:30:07 Europe/Berlin] 1
+[21-Oct-2023 03:32:44 Europe/Berlin] all_menus
+[21-Oct-2023 03:32:44 Europe/Berlin] 146
+[21-Oct-2023 03:32:44 Europe/Berlin] 1428
+[21-Oct-2023 03:32:44 Europe/Berlin] 0
+[21-Oct-2023 03:32:48 Europe/Berlin] all_menus
+[21-Oct-2023 03:32:48 Europe/Berlin] 146
+[21-Oct-2023 03:32:48 Europe/Berlin] 1428
+[21-Oct-2023 03:32:48 Europe/Berlin] 1
+[21-Oct-2023 03:43:50 Europe/Berlin] all_menus
+[21-Oct-2023 03:43:50 Europe/Berlin] 146
+[21-Oct-2023 03:43:50 Europe/Berlin] 1420
+[21-Oct-2023 03:43:50 Europe/Berlin] 0
+[21-Oct-2023 03:45:02 Europe/Berlin] all_menus
+[21-Oct-2023 03:45:02 Europe/Berlin] 146
+[21-Oct-2023 03:45:02 Europe/Berlin] 1429
+[21-Oct-2023 03:45:02 Europe/Berlin] 0
+[21-Oct-2023 03:49:47 Europe/Berlin] all_menus
+[21-Oct-2023 03:49:47 Europe/Berlin] 146
+[21-Oct-2023 03:49:47 Europe/Berlin] 1429
+[21-Oct-2023 03:49:47 Europe/Berlin] 1
+[21-Oct-2023 03:49:50 Europe/Berlin] all_menus
+[21-Oct-2023 03:49:50 Europe/Berlin] 146
+[21-Oct-2023 03:49:50 Europe/Berlin] 1418
+[21-Oct-2023 03:49:50 Europe/Berlin] 0
+[21-Oct-2023 03:49:54 Europe/Berlin] all_menus
+[21-Oct-2023 03:49:54 Europe/Berlin] 146
+[21-Oct-2023 03:49:54 Europe/Berlin] 1429
+[21-Oct-2023 03:49:54 Europe/Berlin] 0
+[21-Oct-2023 03:55:34 Europe/Berlin] all_menus
+[21-Oct-2023 03:55:34 Europe/Berlin] 146
+[21-Oct-2023 03:55:34 Europe/Berlin] 1420
+[21-Oct-2023 03:55:34 Europe/Berlin] 1
+[21-Oct-2023 03:55:38 Europe/Berlin] all_menus
+[21-Oct-2023 03:55:38 Europe/Berlin] 146
+[21-Oct-2023 03:55:38 Europe/Berlin] 1427
+[21-Oct-2023 03:55:38 Europe/Berlin] 0
+[21-Oct-2023 03:55:40 Europe/Berlin] all_menus
+[21-Oct-2023 03:55:40 Europe/Berlin] 146
+[21-Oct-2023 03:55:40 Europe/Berlin] 1422
+[21-Oct-2023 03:55:40 Europe/Berlin] 0
+[21-Oct-2023 03:58:56 Europe/Berlin] all_menus
+[21-Oct-2023 03:58:56 Europe/Berlin] 146
+[21-Oct-2023 03:58:56 Europe/Berlin] 1430
+[21-Oct-2023 03:58:56 Europe/Berlin] 0
+[21-Oct-2023 03:58:58 Europe/Berlin] all_menus
+[21-Oct-2023 03:58:58 Europe/Berlin] 146
+[21-Oct-2023 03:58:58 Europe/Berlin] 1430
+[21-Oct-2023 03:58:58 Europe/Berlin] 1
+[21-Oct-2023 03:59:50 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
+[21-Oct-2023 03:59:50 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
+[21-Oct-2023 03:59:50 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
+[21-Oct-2023 03:59:50 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
+[21-Oct-2023 04:02:19 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 30
+[21-Oct-2023 04:02:19 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 38
+[21-Oct-2023 04:03:41 Europe/Berlin] 147
+[21-Oct-2023 04:07:08 Europe/Berlin] all_menus
+[21-Oct-2023 04:07:08 Europe/Berlin] 147
+[21-Oct-2023 04:07:08 Europe/Berlin] 1432
+[21-Oct-2023 04:07:08 Europe/Berlin] 0
+[21-Oct-2023 04:30:03 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 30
+[21-Oct-2023 04:30:03 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 38
+[21-Oct-2023 04:30:06 Europe/Berlin] all_menus
+[21-Oct-2023 04:30:06 Europe/Berlin] 147
+[21-Oct-2023 04:30:06 Europe/Berlin] 1431
+[21-Oct-2023 04:30:06 Europe/Berlin] 0
+[21-Oct-2023 04:40:16 Europe/Berlin] all_menus
+[21-Oct-2023 04:40:16 Europe/Berlin] 147
+[21-Oct-2023 04:40:16 Europe/Berlin] 1431
+[21-Oct-2023 04:40:16 Europe/Berlin] 1
+[21-Oct-2023 04:42:13 Europe/Berlin] all_menus
+[21-Oct-2023 04:42:13 Europe/Berlin] 147
+[21-Oct-2023 04:42:13 Europe/Berlin] 1431
+[21-Oct-2023 04:42:13 Europe/Berlin] 0
+[21-Oct-2023 04:47:01 Europe/Berlin] all_menus
+[21-Oct-2023 04:47:01 Europe/Berlin] 147
+[21-Oct-2023 04:47:01 Europe/Berlin] 1431
+[21-Oct-2023 04:47:01 Europe/Berlin] 1
+[21-Oct-2023 04:47:48 Europe/Berlin] all_menus
+[21-Oct-2023 04:47:48 Europe/Berlin] 147
+[21-Oct-2023 04:47:48 Europe/Berlin] 1431
+[21-Oct-2023 04:47:48 Europe/Berlin] 0
+[21-Oct-2023 04:48:08 Europe/Berlin] all_menus
+[21-Oct-2023 04:48:08 Europe/Berlin] 147
+[21-Oct-2023 04:48:08 Europe/Berlin] 1431
+[21-Oct-2023 04:48:08 Europe/Berlin] 1
+[21-Oct-2023 04:48:34 Europe/Berlin] all_menus
+[21-Oct-2023 04:48:34 Europe/Berlin] 147
+[21-Oct-2023 04:48:34 Europe/Berlin] 1431
+[21-Oct-2023 04:48:34 Europe/Berlin] 0
+[21-Oct-2023 04:49:40 Europe/Berlin] all_menus
+[21-Oct-2023 04:49:40 Europe/Berlin] 147
+[21-Oct-2023 04:49:40 Europe/Berlin] 1431
+[21-Oct-2023 04:49:40 Europe/Berlin] 1
+[21-Oct-2023 04:50:38 Europe/Berlin] all_menus
+[21-Oct-2023 04:50:38 Europe/Berlin] 147
+[21-Oct-2023 04:50:38 Europe/Berlin] 1431
+[21-Oct-2023 04:50:38 Europe/Berlin] 0
+[21-Oct-2023 04:51:08 Europe/Berlin] all_menus
+[21-Oct-2023 04:51:08 Europe/Berlin] 147
+[21-Oct-2023 04:51:08 Europe/Berlin] 1431
+[21-Oct-2023 04:51:08 Europe/Berlin] 1
+[21-Oct-2023 04:52:06 Europe/Berlin] all_menus
+[21-Oct-2023 04:52:06 Europe/Berlin] 147
+[21-Oct-2023 04:52:06 Europe/Berlin] 1431
+[21-Oct-2023 04:52:06 Europe/Berlin] 0
+[21-Oct-2023 04:53:04 Europe/Berlin] all_menus
+[21-Oct-2023 04:53:04 Europe/Berlin] 147
+[21-Oct-2023 04:53:04 Europe/Berlin] 1431
+[21-Oct-2023 04:53:04 Europe/Berlin] 1
+[21-Oct-2023 04:55:44 Europe/Berlin] all_menus
+[21-Oct-2023 04:55:44 Europe/Berlin] 147
+[21-Oct-2023 04:55:44 Europe/Berlin] 1431
+[21-Oct-2023 04:55:44 Europe/Berlin] 0
+[21-Oct-2023 04:56:17 Europe/Berlin] all_menus
+[21-Oct-2023 04:56:17 Europe/Berlin] 147
+[21-Oct-2023 04:56:17 Europe/Berlin] 1431
+[21-Oct-2023 04:56:17 Europe/Berlin] 1
+[21-Oct-2023 04:56:25 Europe/Berlin] all_menus
+[21-Oct-2023 04:56:25 Europe/Berlin] 147
+[21-Oct-2023 04:56:25 Europe/Berlin] 1431
+[21-Oct-2023 04:56:25 Europe/Berlin] 0
+[21-Oct-2023 04:56:39 Europe/Berlin] all_menus
+[21-Oct-2023 04:56:39 Europe/Berlin] 147
+[21-Oct-2023 04:56:39 Europe/Berlin] 1431
+[21-Oct-2023 04:56:39 Europe/Berlin] 1
+[21-Oct-2023 05:56:34 Europe/Berlin] all_menus
+[21-Oct-2023 05:56:34 Europe/Berlin] 147
+[21-Oct-2023 05:56:34 Europe/Berlin] 1431
+[21-Oct-2023 05:56:34 Europe/Berlin] 0
+[21-Oct-2023 05:56:56 Europe/Berlin] all_menus
+[21-Oct-2023 05:56:56 Europe/Berlin] 147
+[21-Oct-2023 05:56:56 Europe/Berlin] 1431
+[21-Oct-2023 05:56:56 Europe/Berlin] 1
+[21-Oct-2023 05:57:37 Europe/Berlin] all_menus
+[21-Oct-2023 05:57:37 Europe/Berlin] 147
+[21-Oct-2023 05:57:37 Europe/Berlin] 1431
+[21-Oct-2023 05:57:37 Europe/Berlin] 0
+[21-Oct-2023 05:57:41 Europe/Berlin] all_menus
+[21-Oct-2023 05:57:41 Europe/Berlin] 147
+[21-Oct-2023 05:57:41 Europe/Berlin] 1431
+[21-Oct-2023 05:57:41 Europe/Berlin] 1
+[21-Oct-2023 06:04:30 Europe/Berlin] all_menus
+[21-Oct-2023 06:04:30 Europe/Berlin] 147
+[21-Oct-2023 06:04:30 Europe/Berlin] 1431
+[21-Oct-2023 06:04:30 Europe/Berlin] 0
+[21-Oct-2023 06:05:01 Europe/Berlin] all_menus
+[21-Oct-2023 06:05:01 Europe/Berlin] 147
+[21-Oct-2023 06:05:01 Europe/Berlin] 1431
+[21-Oct-2023 06:05:01 Europe/Berlin] 1
+[21-Oct-2023 06:06:55 Europe/Berlin] all_menus
+[21-Oct-2023 06:06:55 Europe/Berlin] 147
+[21-Oct-2023 06:06:55 Europe/Berlin] 1431
+[21-Oct-2023 06:06:55 Europe/Berlin] 0
+[21-Oct-2023 06:07:08 Europe/Berlin] all_menus
+[21-Oct-2023 06:07:08 Europe/Berlin] 147
+[21-Oct-2023 06:07:08 Europe/Berlin] 1431
+[21-Oct-2023 06:07:08 Europe/Berlin] 1
+[21-Oct-2023 06:09:33 Europe/Berlin] all_menus
+[21-Oct-2023 06:09:33 Europe/Berlin] 147
+[21-Oct-2023 06:09:33 Europe/Berlin] 1442
+[21-Oct-2023 06:09:33 Europe/Berlin] 0
+[21-Oct-2023 06:12:25 Europe/Berlin] all_menus
+[21-Oct-2023 06:12:25 Europe/Berlin] 147
+[21-Oct-2023 06:12:25 Europe/Berlin] 1446
+[21-Oct-2023 06:12:25 Europe/Berlin] 0
+[21-Oct-2023 06:36:42 Europe/Berlin] all_menus
+[21-Oct-2023 06:36:42 Europe/Berlin] 147
+[21-Oct-2023 06:36:42 Europe/Berlin] 1433
+[21-Oct-2023 06:36:42 Europe/Berlin] 0
+[21-Oct-2023 06:36:57 Europe/Berlin] all_menus
+[21-Oct-2023 06:36:57 Europe/Berlin] 147
+[21-Oct-2023 06:36:57 Europe/Berlin] 1451
+[21-Oct-2023 06:36:57 Europe/Berlin] 0
+[21-Oct-2023 06:37:43 Europe/Berlin] all_menus
+[21-Oct-2023 06:37:43 Europe/Berlin] 147
+[21-Oct-2023 06:37:43 Europe/Berlin] 1446
+[21-Oct-2023 06:37:43 Europe/Berlin] 1
+[21-Oct-2023 06:37:53 Europe/Berlin] all_menus
+[21-Oct-2023 06:37:53 Europe/Berlin] 147
+[21-Oct-2023 06:37:53 Europe/Berlin] 1433
+[21-Oct-2023 06:37:53 Europe/Berlin] 1
+[21-Oct-2023 06:40:53 Europe/Berlin] all_menus
+[21-Oct-2023 06:40:53 Europe/Berlin] 147
+[21-Oct-2023 06:40:53 Europe/Berlin] 1433
+[21-Oct-2023 06:40:53 Europe/Berlin] 0
+[21-Oct-2023 06:41:03 Europe/Berlin] all_menus
+[21-Oct-2023 06:41:03 Europe/Berlin] 147
+[21-Oct-2023 06:41:03 Europe/Berlin] 1433
+[21-Oct-2023 06:41:03 Europe/Berlin] 1
+[21-Oct-2023 06:41:05 Europe/Berlin] all_menus
+[21-Oct-2023 06:41:05 Europe/Berlin] 147
+[21-Oct-2023 06:41:05 Europe/Berlin] 1434
+[21-Oct-2023 06:41:05 Europe/Berlin] 0
+[21-Oct-2023 06:41:07 Europe/Berlin] all_menus
+[21-Oct-2023 06:41:07 Europe/Berlin] 147
+[21-Oct-2023 06:41:07 Europe/Berlin] 1434
+[21-Oct-2023 06:41:07 Europe/Berlin] 1
+[21-Oct-2023 06:41:09 Europe/Berlin] all_menus
+[21-Oct-2023 06:41:09 Europe/Berlin] 147
+[21-Oct-2023 06:41:09 Europe/Berlin] 1433
+[21-Oct-2023 06:41:09 Europe/Berlin] 0
+[21-Oct-2023 06:41:59 Europe/Berlin] 148
+[21-Oct-2023 06:48:41 Europe/Berlin] 149
+[21-Oct-2023 06:49:31 Europe/Berlin] 150
+[21-Oct-2023 06:54:42 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
+[21-Oct-2023 06:54:42 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
+[21-Oct-2023 06:54:42 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
+[21-Oct-2023 06:54:42 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
+[21-Oct-2023 06:55:20 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 30
+[21-Oct-2023 06:55:20 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 38
+[21-Oct-2023 06:56:20 Europe/Berlin] all_menus
+[21-Oct-2023 06:56:20 Europe/Berlin] 150
+[21-Oct-2023 06:56:20 Europe/Berlin] 1475
+[21-Oct-2023 06:56:20 Europe/Berlin] 0
+[21-Oct-2023 06:56:58 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
+[21-Oct-2023 06:56:58 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
+[21-Oct-2023 06:56:58 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
+[21-Oct-2023 06:56:58 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
+[21-Oct-2023 06:57:23 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
+[21-Oct-2023 06:57:23 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
+[21-Oct-2023 06:57:23 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
+[21-Oct-2023 06:57:23 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
+[21-Oct-2023 06:59:17 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 30
+[21-Oct-2023 06:59:17 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 38
+[21-Oct-2023 06:59:29 Europe/Berlin] all_menus
+[21-Oct-2023 06:59:29 Europe/Berlin] 150
+[21-Oct-2023 06:59:29 Europe/Berlin] 1475
+[21-Oct-2023 06:59:29 Europe/Berlin] 1
+[21-Oct-2023 06:59:32 Europe/Berlin] all_menus
+[21-Oct-2023 06:59:32 Europe/Berlin] 150
+[21-Oct-2023 06:59:32 Europe/Berlin] 1478
+[21-Oct-2023 06:59:32 Europe/Berlin] 0
+[21-Oct-2023 06:59:42 Europe/Berlin] all_menus
+[21-Oct-2023 06:59:42 Europe/Berlin] 150
+[21-Oct-2023 06:59:42 Europe/Berlin] 1479
+[21-Oct-2023 06:59:42 Europe/Berlin] 0
+[21-Oct-2023 06:59:57 Europe/Berlin] all_menus
+[21-Oct-2023 06:59:57 Europe/Berlin] 150
+[21-Oct-2023 06:59:57 Europe/Berlin] 1479
+[21-Oct-2023 06:59:57 Europe/Berlin] 1
+[21-Oct-2023 06:59:59 Europe/Berlin] all_menus
+[21-Oct-2023 06:59:59 Europe/Berlin] 150
+[21-Oct-2023 06:59:59 Europe/Berlin] 1478
+[21-Oct-2023 06:59:59 Europe/Berlin] 1
+[21-Oct-2023 07:00:14 Europe/Berlin] all_menus
+[21-Oct-2023 07:00:14 Europe/Berlin] 150
+[21-Oct-2023 07:00:14 Europe/Berlin] 1475
+[21-Oct-2023 07:00:14 Europe/Berlin] 0
+[21-Oct-2023 07:00:48 Europe/Berlin] 151
+[21-Oct-2023 07:02:35 Europe/Berlin] all_menus
+[21-Oct-2023 07:02:35 Europe/Berlin] 151
+[21-Oct-2023 07:02:35 Europe/Berlin] 1482
+[21-Oct-2023 07:02:35 Europe/Berlin] 0
+[21-Oct-2023 07:03:12 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 30
+[21-Oct-2023 07:03:12 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 38
+[21-Oct-2023 07:09:20 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
+[21-Oct-2023 07:09:20 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
+[21-Oct-2023 07:09:20 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
+[21-Oct-2023 07:09:20 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
+[21-Oct-2023 07:09:35 Europe/Berlin] all_menus
+[21-Oct-2023 07:09:35 Europe/Berlin] 151
+[21-Oct-2023 07:09:35 Europe/Berlin] 1482
+[21-Oct-2023 07:09:35 Europe/Berlin] 1
+[21-Oct-2023 07:09:43 Europe/Berlin] all_menus
+[21-Oct-2023 07:09:43 Europe/Berlin] 151
+[21-Oct-2023 07:09:43 Europe/Berlin] 1482
+[21-Oct-2023 07:09:43 Europe/Berlin] 0
+[21-Oct-2023 07:09:50 Europe/Berlin] all_menus
+[21-Oct-2023 07:09:50 Europe/Berlin] 151
+[21-Oct-2023 07:09:50 Europe/Berlin] 1482
+[21-Oct-2023 07:09:50 Europe/Berlin] 1
