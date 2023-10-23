@@ -31,17 +31,19 @@ class PostController{
     }
     static public function createItemMenu($table,$name,$description,$price,$photo,$menu_item_type,$idProfile_user,$amount){
         if(isset($photo['name'])){ //Si el formulario incluye una imagen, la agrega, sino se pone la img por defecto
-            $carpetaDestino = __DIR__ . "../../../../files/images/MenuItems";
+            $carpetaDestino = "files/images/MenuItems";
             $nombreArchivo = $photo['name'];
             $rutaArchivo = $carpetaDestino . DIRECTORY_SEPARATOR . $nombreArchivo;
             
             if (!is_dir($carpetaDestino)) {
                 mkdir($carpetaDestino, 0777, true);
+                
             }
             
             $rutaArchivoRelativa = 'files/images/MenuItems/' . $nombreArchivo;
-            
+
             move_uploaded_file($photo['tmp_name'], $rutaArchivo);
+
         }else{//Si no hay una foto, se incluye la foto por defecto
             $rutaArchivoRelativa = "files/images/sin_imagen.webp";
         }
