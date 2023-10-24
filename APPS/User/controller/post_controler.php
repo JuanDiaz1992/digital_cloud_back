@@ -34,7 +34,7 @@ class PostController{
             }
             
             if(isset($photo['name'])){ //Si el formulario incluye una imagen, la agrega, sino se pone la img por defecto
-                $carpetaDestino = __DIR__ . "../../../../files/user_profile/" . $userName;
+                $carpetaDestino = "files/user_profile/" . $userName;
                 $nombreArchivo = $photo['name'];
                 $rutaArchivo = $carpetaDestino . DIRECTORY_SEPARATOR . $nombreArchivo;
                 
@@ -96,7 +96,7 @@ class PostController{
             }
            
             if(isset($photo['name'])){ //Si el formulario incluye una imagen, la agrega, sino se pone la img por defecto
-                $carpetaDestino = __DIR__ . "../../../../files/user_profile/" . $userName;
+                $carpetaDestino = "files/user_profile/" . $userName;
                 $nombreArchivo = $photo['name'];
                 $rutaArchivo = $carpetaDestino . DIRECTORY_SEPARATOR . $nombreArchivo;
                 
