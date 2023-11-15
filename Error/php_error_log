@@ -1,45 +1,38 @@
-[22-Oct-2023 23:39:11 Europe/Berlin] PHP Warning:  Undefined array key "menu_temp" in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 30
-[22-Oct-2023 23:39:11 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in F:\xampp\htdocs\gestion_restaurante\APPS\Menu_management\controller\get_controler.php on line 38
-[22-Oct-2023 23:39:28 Europe/Berlin] 152
-[22-Oct-2023 23:40:09 Europe/Berlin] all_menus
-[22-Oct-2023 23:40:09 Europe/Berlin] 152
-[22-Oct-2023 23:40:09 Europe/Berlin] 1492
-[22-Oct-2023 23:40:09 Europe/Berlin] 0
-[22-Oct-2023 23:40:21 Europe/Berlin] all_menus
-[22-Oct-2023 23:40:21 Europe/Berlin] 152
-[22-Oct-2023 23:40:21 Europe/Berlin] 1492
-[22-Oct-2023 23:40:21 Europe/Berlin] 1
-[22-Oct-2023 23:52:33 Europe/Berlin] all_menus
-[22-Oct-2023 23:52:33 Europe/Berlin] 152
-[22-Oct-2023 23:52:33 Europe/Berlin] 1492
-[22-Oct-2023 23:52:33 Europe/Berlin] 0
-[22-Oct-2023 23:57:19 Europe/Berlin] all_menus
-[22-Oct-2023 23:57:19 Europe/Berlin] 152
-[22-Oct-2023 23:57:19 Europe/Berlin] 1493
-[22-Oct-2023 23:57:19 Europe/Berlin] 0
-[22-Oct-2023 23:57:23 Europe/Berlin] all_menus
-[22-Oct-2023 23:57:23 Europe/Berlin] 152
-[22-Oct-2023 23:57:23 Europe/Berlin] 1494
-[22-Oct-2023 23:57:23 Europe/Berlin] 0
-[23-Oct-2023 00:01:15 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
-[23-Oct-2023 00:01:15 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
-[23-Oct-2023 00:01:15 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
-[23-Oct-2023 00:01:15 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
-[23-Oct-2023 00:02:09 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 32
-[23-Oct-2023 00:02:09 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 34
-[23-Oct-2023 00:02:09 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 36
-[23-Oct-2023 00:02:09 Europe/Berlin] PHP Warning:  Undefined variable $module in F:\xampp\htdocs\gestion_restaurante\Routes\services\get.php on line 38
-[23-Oct-2023 00:04:32 Europe/Berlin] 153
-[23-Oct-2023 00:04:58 Europe/Berlin] all_menus
-[23-Oct-2023 00:04:58 Europe/Berlin] 153
-[23-Oct-2023 00:04:58 Europe/Berlin] 1508
-[23-Oct-2023 00:04:58 Europe/Berlin] 0
-[23-Oct-2023 00:05:19 Europe/Berlin] all_menus
-[23-Oct-2023 00:05:19 Europe/Berlin] 153
-[23-Oct-2023 00:05:19 Europe/Berlin] 1525
-[23-Oct-2023 00:05:19 Europe/Berlin] 0
-[23-Oct-2023 00:19:22 Europe/Berlin] all_menus
-[23-Oct-2023 00:19:22 Europe/Berlin] 153
-[23-Oct-2023 00:19:22 Europe/Berlin] 1525
-[23-Oct-2023 00:19:22 Europe/Berlin] 1
-[23-Oct-2023 00:26:37 Europe/Berlin] 154
+[15-Nov-2023 07:06:30 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'digital_cloud_mysql.profile_user' doesn't exist in F:\xampp\htdocs\digital_cloud\APPS\User\model\get_model.php:10
+Stack trace:
+#0 F:\xampp\htdocs\digital_cloud\APPS\User\model\get_model.php(10): PDOStatement->execute()
+#1 F:\xampp\htdocs\digital_cloud\APPS\User\model\get_model.php(26): GetModel::getData('profile_user', '*')
+#2 F:\xampp\htdocs\digital_cloud\APPS\User\controller\get_controler.php(30): GetModel::getAllUsers('profile_user', '*')
+#3 F:\xampp\htdocs\digital_cloud\APPS\User\views\get.php(14): GetController::getAllUsers('profile_user', '*')
+#4 F:\xampp\htdocs\digital_cloud\Routes\services\get.php(35): require_once('F:\\xampp\\htdocs...')
+#5 F:\xampp\htdocs\digital_cloud\Routes\routes.php(17): include('F:\\xampp\\htdocs...')
+#6 F:\xampp\htdocs\digital_cloud\digital_cloud_settings\routes_controller.php(7): include('F:\\xampp\\htdocs...')
+#7 F:\xampp\htdocs\digital_cloud\index.php(25): RoutesController->index()
+#8 {main}
+  thrown in F:\xampp\htdocs\digital_cloud\APPS\User\model\get_model.php on line 10
+[15-Nov-2023 07:06:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'digital_cloud_mysql.profile_user' doesn't exist in F:\xampp\htdocs\digital_cloud\APPS\User\model\get_model.php:10
+Stack trace:
+#0 F:\xampp\htdocs\digital_cloud\APPS\User\model\get_model.php(10): PDOStatement->execute()
+#1 F:\xampp\htdocs\digital_cloud\APPS\User\model\get_model.php(26): GetModel::getData('profile_user', '*')
+#2 F:\xampp\htdocs\digital_cloud\APPS\User\controller\get_controler.php(30): GetModel::getAllUsers('profile_user', '*')
+#3 F:\xampp\htdocs\digital_cloud\APPS\User\views\get.php(14): GetController::getAllUsers('profile_user', '*')
+#4 F:\xampp\htdocs\digital_cloud\Routes\services\get.php(35): require_once('F:\\xampp\\htdocs...')
+#5 F:\xampp\htdocs\digital_cloud\Routes\routes.php(17): include('F:\\xampp\\htdocs...')
+#6 F:\xampp\htdocs\digital_cloud\digital_cloud_settings\routes_controller.php(7): include('F:\\xampp\\htdocs...')
+#7 F:\xampp\htdocs\digital_cloud\index.php(25): RoutesController->index()
+#8 {main}
+  thrown in F:\xampp\htdocs\digital_cloud\APPS\User\model\get_model.php on line 10
+[15-Nov-2023 07:55:48 Europe/Berlin] PHP Warning:  Undefined array key "type_user" in F:\xampp\htdocs\digital_cloud\APPS\User\views\get.php on line 13
+[15-Nov-2023 07:55:48 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'digital_cloud_mysql.profile_user' doesn't exist in F:\xampp\htdocs\digital_cloud\APPS\User\model\get_model.php:10
+Stack trace:
+#0 F:\xampp\htdocs\digital_cloud\APPS\User\model\get_model.php(10): PDOStatement->execute()
+#1 F:\xampp\htdocs\digital_cloud\APPS\User\controller\get_controler.php(8): GetModel::getData('profile_user', '*')
+#2 F:\xampp\htdocs\digital_cloud\APPS\User\views\get.php(20): GetController::getData('profile_user', '*')
+#3 F:\xampp\htdocs\digital_cloud\Routes\services\get.php(35): require_once('F:\\xampp\\htdocs...')
+#4 F:\xampp\htdocs\digital_cloud\Routes\routes.php(17): include('F:\\xampp\\htdocs...')
+#5 F:\xampp\htdocs\digital_cloud\digital_cloud_settings\routes_controller.php(7): include('F:\\xampp\\htdocs...')
+#6 F:\xampp\htdocs\digital_cloud\index.php(25): RoutesController->index()
+#7 {main}
+  thrown in F:\xampp\htdocs\digital_cloud\APPS\User\model\get_model.php on line 10
+[15-Nov-2023 07:57:00 Europe/Berlin] PHP Warning:  session_start(): open(F:\xampp\tmp\sess_6542, O_RDWR) failed: Permission denied (13) in F:\xampp\htdocs\digital_cloud\APPS\User\views\get.php on line 8
+[15-Nov-2023 07:57:00 Europe/Berlin] PHP Warning:  session_start(): Failed to read session data: files (path: F:\xampp\tmp) in F:\xampp\htdocs\digital_cloud\APPS\User\views\get.php on line 8

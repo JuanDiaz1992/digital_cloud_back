@@ -1,19 +1,79 @@
 <?php
 
 require_once "APPS/User/model/post_model.php";
-
+require_once('vendor/autoload.php');
+use Firebase\JWT\JWT;
 
 class PostController{
 
 
     /************************Metodo para crear usuarios nuevos *********************/
-    static public function postControllerCreateUser($id_business,$userName, $password, $confirmPassword, $name, $photo, $type_user){
-    
-        if (!preg_match('/^[a-zA-Z0-9]+$/', $userName) || //En este if se validan caracteres especiales
-            !preg_match('/^[a-zA-Z0-9]+$/', $password) ||
-            !preg_match('/^[a-zA-Z\s]+$/', $name) ||
-            !preg_match('/^[a-zA-Z0-9]+$/', $confirmPassword) ||
-            !preg_match('/^[a-zA-Z0-9]+$/', $type_user)) {
+    static public function postControllerCreateUser($data){
+
+        if  (
+                $data['firstName'] == "" ||
+                $data['firstLastName'] == "" ||
+                $data['userName'] == "" ||
+                $data['password'] == "" ||
+                $data['confirmPasword'] == "" ||
+                $data['email'] == ""
+            ){
+                $json = array(
+                    'status' => 409,
+                    'message' => 'Ningun campo puede estar vacío, excepto segundo nombre o segundo apellido '
+                );
+                echo json_encode($json, http_response_code($json['status']));
+                exit;
+
+            }
+        if (!preg_match('/^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]+$/', $data['firstName']) || //En este if se validan caracteres especiales
+            !preg_match('/^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s]+$/', $data['secondName']) ||
+            !preg_match('/^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]+$/', $data['firstLastName']) ||
+            !preg_match('/^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s]+$/', $data['secondLastName']) ||
+            !preg_match('/^[a-zA-Z0-9]+$/', $data['userName']) ||
+            !preg_match('/^[a-zA-Z0-9]+$/', $data['password']) ||
+            !preg_match('/^[a-zA-Z0-9]+$/',$data['confirmPasword']) ||
+            $data['confirmPasword'] != $data['password']
+            ){
+                $json = array(
+                    'status' => 409,
+                    'message' => 'Los datos ingresados no son correctos, valide la información e intentelo de nuevo'
+                );
+                echo json_encode($json, http_response_code($json['status']));
+                exit;
+            }
+        if  (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+            $json = array(
+                'status' => 409,
+                'message' => 'El correo electrónico no es válido'
+            );
+            echo json_encode($json, http_response_code($json['status']));
+            exit;
+            }
+
+        $type_user = 2;
+        $hashedPassword = password_hash($data['password'], PASSWORD_DEFAULT); //Aquí se genera un hash para la contraseña
+        $response = PostModel::postDataCreateUser($data,$hashedPassword,$type_user);
+        $return = new PostController();
+        if ($response["code"] == 409){
+            $return -> fncResponse($response,409);
+        }elseif($response["code"] == 200){
+            $return -> fncResponse($response,200);
+        }
+        
+    }
+
+    //Función que completa el registro del usuario.
+    static public function postControllerCompleteRecord($data,$table){
+        if (!preg_match('/^[0-9]+$/', $data["typeDocument"]) ||
+            !preg_match('/^[0-9_-]+$/', $data["document"]) ||
+            !preg_match('/^[0-9_-]+$/', $data["birthdate"]) ||
+            !preg_match('/^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s]+$/', $data["departamentSelect"]) ||
+            !preg_match('/^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s]+$/', $data["citiSelecte"]) ||
+            !preg_match('/^[a-zA-Z0-9_#áéíóúÁÉÍÓÚñÑ\s-]+$/', $data["address"]) ||
+            !preg_match('/^[0-9_#\s+-]+$/', $data["phone"]) ||
+            !preg_match('/^[a-zA-Z0-9_#áéíóúÁÉÍÓÚñÑ\s-]+$/', $data["occupation"]) ||
+            !is_bool($data["dataPolitic"])){
                 $json = array(
                     'status' => 404,
                     'is_logged_in' => false,
@@ -22,48 +82,16 @@ class PostController{
                 echo json_encode($json, http_response_code($json['status']));
                 exit;
             }
+        $response = PostModel::postDataCompleteRecord($data);
+        $return = new PostController();
+        if ($response == 404){
+            $return -> fncResponse($response,404);
 
-            if ($password !== $confirmPassword) { //Aquí se valida que la contraseña sea correcta 
-                $json = array(
-                    'status' => 404,
-                    'is_logged_in' => false,
-                    'message' => 'Las contraseñas no coinciden'
-                );
-                echo json_encode($json, http_response_code($json['status']));
-                exit;
-            }
-            
-            if(isset($photo['name'])){ //Si el formulario incluye una imagen, la agrega, sino se pone la img por defecto
-                $carpetaDestino = "files/user_profile/" . $userName;
-                $nombreArchivo = $photo['name'];
-                $rutaArchivo = $carpetaDestino . DIRECTORY_SEPARATOR . $nombreArchivo;
-                
-                if (!is_dir($carpetaDestino)) {
-                    mkdir($carpetaDestino, 0777, true);
-                }
-                
-                $rutaArchivoRelativa = 'files/user_profile/' . $userName .'/'. $nombreArchivo;
-                
-                move_uploaded_file($photo['tmp_name'], $rutaArchivo);
-            }else{
-                $rutaArchivoRelativa = "files/images/sin_imagen.webp";
-            }
-
-            
-            $hashedPassword = password_hash($password, PASSWORD_DEFAULT); //Aquí se genera un hash para la contraseña
-            $response = PostModel::postDataCreateUser($id_business,$userName, $hashedPassword, $name, $rutaArchivoRelativa, $type_user);
-            $return = new PostController();
-            if ($response == 404){
-                $return -> fncResponse($response,404);
-
-            }elseif($response == 200){
-                $return -> fncResponse($response,200);
-            }
-            
-
-
-
-    }//***********************Este metodo es usado para el inicio de sessión***************/
+        }elseif($response == 200){
+            $return ->postDataconsultUser($table,$data["userName"],$data["password"]);
+        }
+    }
+    //***********************Este metodo es usado para el inicio de sessión***************/
     static public function postDataconsultUser($table,$username,$password){ 
 
         if (!preg_match('/^[a-zA-Z0-9]+$/', $username) || !preg_match('/^[a-zA-Z0-9]+$/', $password)) { //Si el usuario o contraseña incluyen caracteres, no permite continúar
@@ -96,7 +124,7 @@ class PostController{
             }
            
             if(isset($photo['name'])){ //Si el formulario incluye una imagen, la agrega, sino se pone la img por defecto
-                $carpetaDestino = "files/user_profile/" . $userName;
+                $carpetaDestino = __DIR__ . "../../../../files/user_profile/" . $userName;
                 $nombreArchivo = $photo['name'];
                 $rutaArchivo = $carpetaDestino . DIRECTORY_SEPARATOR . $nombreArchivo;
                 
@@ -153,17 +181,20 @@ class PostController{
     }
     public function isUserOk($response){ //Si el usuario y contraseña coinciden, se inicia sesión
         if (!empty($response)) {
-            $new_id = rand(3000, 11500); //Se genera un id para la sesión el cuál servirá como token en el front
-            session_id($new_id);
+            require_once "digital_cloud_settings/Generator_token.php";
+            $tokenGerator = Token::generateToken($response[0]->id, $response[0]->username);
+            $jwt = JWT::encode($tokenGerator,'3aw58420', 'HS256'); //Generación de token con los datos de usuario y codigo alfanumerico
+            session_id($tokenGerator["id"]);
             session_set_cookie_params(1800);
             session_start();
+            $_SESSION["exp"] = $tokenGerator["exp"]; //Aquí se expesifica la fecha de expiración
             $_SESSION["username"] = $response[0]->username; //Se guardan las variables de sesión
             $_SESSION["estatus"] = true;
             $_SESSION["type_user"] = $response[0]->type_user;
             $json = array( //Se devuelve el json con la información necesaria para inicia la sesión en el front
                 'status' => 200,
                 'is_logged_in' => true, 
-                'token' => $new_id,
+                'token' => $jwt,
                 'username'=> $_SESSION["username"],
                 "message"=> "Usuario correcto",
                 "name"=> $response[0]->name,
@@ -187,7 +218,7 @@ class PostController{
         if (!empty($response) && $status === 200) {
             $json = array(
                 'status' => $status,
-                'results' => 'success',
+                'results' => $response,
                 'registered'=>true,
                 'message' => "Registro ingresado correctamente" 
             );
@@ -196,7 +227,7 @@ class PostController{
                 'registered'=>false,
                 'status' => $status,
                 'results' => 'Not Found',
-                'message' => "El usuario ya existe"
+                'message' => "El usuario o correo ya existe"
             );
         }else{
             $json = array(
