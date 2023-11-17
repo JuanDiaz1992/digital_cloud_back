@@ -1,7 +1,7 @@
 <?php
 
 
-require_once "APPS/Inventory/model/get_model.php";
+require_once "APPS/Documents/model/get_model.php";
 
 class GetController{
     static public function getData($table,$select){
@@ -18,8 +18,8 @@ class GetController{
 
     }
 
-    static public function getInventoryForDate($table,$linkTo,$equalTo){
-        $response = GetModel::getInventoryForDateModel($table,$linkTo,$equalTo);
+    static public function getBillsController($table,$select,$equalTo){
+        $response = GetModel::getBills($table,$select,$equalTo);
         $return = new GetController();
         $return -> fncResponse($response);
     }

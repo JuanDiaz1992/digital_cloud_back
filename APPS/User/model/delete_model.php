@@ -3,16 +3,9 @@
 
 require_once "digital_cloud_settings/Connection.php";
 class DeleteModel{
-    //Peticiones post sin filtro
-    static public function deleteData($table, $select){
-        $sql = "SELECT $select FROM $table";
-        $stmt = Connection::connect()->prepare($sql);
-        $stmt-> execute();
-        return $stmt-> fetchAll(PDO::FETCH_CLASS);
-    }
     //Metodo para eliminar usuario de la bd
     static public function deleteUserModel($id){
-        $sql = "DELETE FROM profile_user WHERE id = :id ";
+        $sql = "DELETE FROM users WHERE id = :id ";
         $stmt = Connection::connect()->prepare($sql);
         $stmt->bindParam(":id", $id, PDO::PARAM_STR);
         $stmt->execute();

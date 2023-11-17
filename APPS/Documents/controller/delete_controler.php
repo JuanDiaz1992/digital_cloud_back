@@ -1,6 +1,6 @@
 <?php
 
-require_once "APPS/Inventory/model/delete_model.php";
+require_once "APPS/Documents/model/delete_model.php";
 
 
 class DeleteController{

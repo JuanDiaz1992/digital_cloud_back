@@ -30,8 +30,8 @@ if (isset($_SERVER['HTTP_MODULE'])) {
 
 if($module == 'user'){
     require_once "APPS/User/views/post.php";
-}else if($module == 'financial_record'){
-    require_once "APPS/Financial_record/views/post.php";
+}else if($module == 'documents'){
+    require_once "APPS/Documents/views/post.php";
 }
 
 

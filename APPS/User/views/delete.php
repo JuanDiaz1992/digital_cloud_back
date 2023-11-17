@@ -12,7 +12,7 @@ if (isset($tokenDecode)) {
 
     }
     elseif(isset($data["delete_user"])){
-        if($tokenDecode && $_SESSION["type_user"] === 'Admin'){
+        if($tokenDecode && $_SESSION["type_user"] === 1){
             $response -> deleteUserController($data["id"]);
         }else{
             badResponse();

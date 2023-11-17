@@ -1,6 +1,6 @@
 <?php
 
-require_once "gestionRestauranteSettings/Connection.php";
+require_once "digital_cloud_settings/Connection.php";
 $response = new GetController();
 class GetModel{
     //Peticiones get sin filtro
@@ -10,8 +10,17 @@ class GetModel{
         $stmt-> execute();
         return $stmt-> fetchAll(PDO::FETCH_CLASS);
     }
+    static public function getBills($table, $select,$equalTo){
+        $sql = "SELECT $select FROM $table WHERE date = :date";
+        $stmt = Connection::connect()->prepare($sql);
+        $stmt->bindParam(':date',$equalTo);
+        $stmt-> execute();
+        return $stmt-> fetchAll(PDO::FETCH_CLASS);
+    }
     //Peticiones get con filtro
     static public function getDataFilter($table,$select,$linkTo,$equalTo){
+        error_log($linkTo);
+        error_log($equalTo);
         $linkToArray = explode(",",$linkTo);
         $equalToArray = explode("_",$equalTo);
         $linkToText = "";

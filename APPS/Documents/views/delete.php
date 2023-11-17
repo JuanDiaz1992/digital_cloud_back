@@ -1,5 +1,5 @@
 <?php
-require_once "APPS/Inventory/controller/delete_controler.php";
+require_once "APPS/Documents/controller/delete_controler.php";
 $response = new DeleteController();
 
 

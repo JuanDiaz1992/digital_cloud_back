@@ -1,7 +1,7 @@
 <?php
 
 
-require_once "gestionRestauranteSettings/Connection.php";
+require_once "digital_cloud_settings/Connection.php";
 class DeleteModel{
 
     //Metodo para eliminar usuario de la bd
