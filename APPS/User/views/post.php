@@ -15,7 +15,6 @@ if(isset($data["login_request"])){
         session_start();
         if($_SESSION["type_user"] === 1){
             if(isset($_POST["newUser_request"])){
-
                 $img = isset($_FILES['photo'])? $_FILES['photo'] : '';
                 $response ->postControllerCreateUser(
                     $_POST['userName'],
@@ -25,24 +24,24 @@ if(isset($data["login_request"])){
                     $img,
                     $_POST['type_user'],
                     );
+                }else if(isset($_POST["edit_user_request"])){
+                    $img = isset($_FILES['photo'])? $_FILES['photo'] : '';
+                    $response ->postControllerModify(
+                        $_POST['id'],
+                        $_POST['name'],
+                        $img,
+                        $_POST['type_user'],
+                        $_POST['username']
+                        );    
+                }else if(isset($data['changePasswordUser'])){
+                        $response ->changePassword(
+                            $data['id'],
+                            $data['password'],
+                            $data['confirmPassword'],
+                        );  
+                }else{
+                    badResponse();
                 }
-            }else if(isset($_REQUEST["edit_user_request"])){
-                $img = isset($_FILES['photo'])? $_FILES['photo'] : '';
-                $response ->postControllerModify(
-                    $_POST['id'],
-                    $_POST['name'],
-                    $img,
-                    $_POST['type_user'],
-                    $_POST['username']
-                    );    
-            }else if(isset($data['changePasswordUser'])){
-                    $response ->changePassword(
-                        $data['id'],
-                        $data['password'],
-                        $data['confirmPassword'],
-                    );  
-            }else{
-                badResponse();
             }
     }
 }

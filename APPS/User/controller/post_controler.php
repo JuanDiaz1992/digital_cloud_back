@@ -93,6 +93,10 @@ class PostController{
             }else{
                 $rutaArchivoRelativa = false;
             }
+            error_log($id);
+            error_log($name);
+            error_log($rutaArchivoRelativa);
+            error_log($type_user);
 
             $response = PostModel::PostDataModify($id, $name, $rutaArchivoRelativa, $type_user);
             $return = new PostController();
