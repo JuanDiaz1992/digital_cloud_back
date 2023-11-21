@@ -10,7 +10,7 @@ if(isset($tokenDecode)){
         $response -> validateUSer($tokenDecode);
     }elseif($table === "profile"){
         $response->getDataProfileController($_GET);
-    }elseif($table === "profile_user" && $_SESSION["type_user"] === 1){
+    }elseif($table === "profile_user" && intval($_SESSION["type_user"]) === 1){
         $response->getAllUsers("users",$select);
     }
     else{

@@ -178,7 +178,7 @@ class PostController{
                 'username'=> $_SESSION["username"],
                 "message"=> "Usuario correcto",
                 "name"=> $response[0]->name,
-                "type_user" => $response[0]->type_user,
+                "type_user" => intval($response[0]->type_user),
                 "photo" => $response[0]->photo,
                 "id_user"=>$response[0]->id
             );

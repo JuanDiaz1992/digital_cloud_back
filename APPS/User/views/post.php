@@ -13,7 +13,7 @@ if(isset($data["login_request"])){
     if(isset($tokenDecode)){
         session_id($tokenDecode->id);
         session_start();
-        if($_SESSION["type_user"] === 1){
+        if(intval($_SESSION["type_user"]) === 1){
             if(isset($_POST["newUser_request"])){
                 $img = isset($_FILES['photo'])? $_FILES['photo'] : '';
                 $response ->postControllerCreateUser(
